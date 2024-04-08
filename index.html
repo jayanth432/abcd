@@ -59,6 +59,49 @@
             bottom: 0;
             width: 100%;
         }
+
+        /* Improved contrast for accessibility */
+        .footer p {
+            color: #ccc; /* Light grey text */
+        }
+
+        .product h2, .product p {
+            color: #333; /* Dark grey text */
+        }
+
+        .form-section {
+            background-color: #fff; /* White background for form section */
+            padding: 50px;
+            text-align: center;
+        }
+
+        .form-section label {
+            color: #333; /* Dark grey text */
+        }
+
+        .form-section input[type="text"],
+        .form-section input[type="email"],
+        .form-section textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc; /* Light grey border */
+            border-radius: 5px;
+        }
+
+        .form-section input[type="submit"] {
+            background-color: #4CAF50; /* Green button */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-section input[type="submit"]:hover {
+            background-color: #45a049; /* Darker shade of green on hover */
+        }
     </style>
 </head>
 
@@ -97,7 +140,7 @@
         <p>&copy; 2024 Apple Inc. All rights reserved.</p>
     </div>
 
-    <div class="form-section" style="padding: 50px; text-align: center;">
+    <div class="form-section">
         <h2>Contact Us</h2>
         <form>
             <label for="name">Name:</label><br>
